@@ -19,7 +19,18 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 .secrets/
+
+# Python tools
+pip-log.txt
+pip-delete-this-directory.txt
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.ruff_cache/
+.pytype/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -34,29 +45,86 @@ wheels/
 venv/
 env/
 ENV/
-.env
+virtualenv/
+venv.bak/
+env.bak/
 
 # IDE
 .idea/
 .vscode/
 *.swp
 *.swo
-.DS_Store
+*~
+.project
+.pydevproject
+.settings/
+.classpath
 
 # Testing
 .coverage
+.coverage.*
 htmlcov/
 .pytest_cache/
 .tox/
+.nox/
+*.cover
+*.py,cover
+.hypothesis/
+nosetests.xml
+coverage.xml
+.cache
+pytest_cache/
 
 # Distribution
 *.tar.gz
 *.whl
 
-# Misc
+# OS Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+desktop.ini
+
+# Environment variables
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env.*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# LangGraph specific
 .langgraph_api
+.langgraph_checkpoint/
+langgraph-api/
+
+# UV package manager
+.uv/
+
+# Project specific
+src/email_assistant/eval/results/*.png
+!src/email_assistant/eval/results/.gitkeep
